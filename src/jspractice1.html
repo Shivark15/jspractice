@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .lw
+        {
+          text-align: center;
+          margin-top: 10%;
+        }
+        .lw1
+        {
+            margin: 5px;
+            padding: 15px;
+        }
+        .func
+        {
+            text-align: center;
+
+        }
+
+        p{
+            margin-left:35%;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="lw">
+        <div class="lw1"> width of rectangle
+           <input id="width"/> mtr
+        </div>
+        <div class="lw1"> lenght of rectangle
+           <input id="lenght"/> mtr
+        </div>  
+
+        <div>
+            <button onclick="myFunction()"> calc area and parameter</button>  
+        </div>
+
+        <div>
+
+            <script >
+                function myFunction() {
+                  let lenght = document.getElementById("lenght").value;
+                  let width = document.getElementById("width").value;
+                  let a = lenght * width;
+                  let p = (2 * lenght) +  (2 * width );
+                  document.getElementById("demo1").innerHTML = "area is :" + a ;
+                  document.getElementById("demo2").innerHTML = "perimeter is :" + p ;
+                }
+            </script>
+                
+    
+        </div>
+    
+
+    </div> 
+    
+
+    <div>
+
+        <script >
+            function myFunction() {
+              let lenght = document.getElementById("lenght").value;
+              let width = document.getElementById("width").value;
+              let a = lenght * width;
+              let p = (2 * lenght) +  (2 * width );
+              document.getElementById("demo1").innerHTML = "area is :" + a ;
+              document.getElementById("demo2").innerHTML = "perimeter is :" + p ;
+            }
+        </script>
+            
+
+    </div>
+
+    <div>
+
+       <p id="demo1"></p>
+         <br>
+        <p id="demo2"> </p> 
+
+
+
+    </div>
+
+</body>
+
+</html>   
